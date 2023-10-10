@@ -1,0 +1,9 @@
+/* TODO: Exercise 1.2: Style buttons */
+
+/* Button Colors */
+.primary
+{
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color:#E6E4FF;
+}
