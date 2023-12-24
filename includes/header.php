@@ -14,13 +14,15 @@
     <link href="assets/css/custom.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="assets/css/font-awesome">
+    <!-- Font Awesome links -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/regular.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css">
     <!-- alertify js -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
-
-    <title>GOGATWO</title>
+    <link rel="shortcut icon" href="assets\img\logo.png" type="image/x-icon">
 </head>
 
 <body>

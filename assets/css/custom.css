@@ -1,0 +1,25 @@
+*{
+    font-family: "Sora", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.underline{
+    height: 5px;
+    width: 150px;
+    background-color: red;
+    border-radius: 20px;
+}
+.bg-f2f2f2{
+    background-color: #f2f2f2;
+}
+.center-cropped {
+    width: 300px;
+    height: 380px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+/* td {
+    display: flex !important;
+} */
