@@ -31,7 +31,7 @@
                             <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contact.php') ? 'active' : ''; ?>" style="width:auto;" href="contact.php"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'category.php') ? 'active' : ''; ?>" style="width:100px;" href="category.php"><i class="fa-regular fa-store"></i>Product </a>
+                            <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'product.php') ? 'active' : ''; ?>" style="width:100px;" href="product.php"><i class="fa-regular fa-store"></i>Product </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'wishlist.php') ? 'active' : ''; ?>" href="wishlist.php"><i class="fa-regular fa-heart"></i>Wishlist</a>
