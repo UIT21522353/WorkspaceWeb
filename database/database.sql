@@ -99,20 +99,20 @@ CREATE TABLE IF NOT EXISTS `customers` (
 -- Đang đổ dữ liệu cho bảng `customers`
 --
 INSERT INTO
-    `customers` (
-        `customerID`,
-        `customerName`,
-        `age`,
-        `gender`,
-        `joinDate`,
-        `birthDate`
+    customers (
+        customerID,
+        customerName,
+        age,
+        gender,
+        joinDate,
+        birthDate
     )
 VALUES
     (
         3,
         'Nguyễn Văn A',
         25,
-        b '1',
+        0b1,
         '2023-01-01',
         '1998-05-15'
     ),
@@ -120,7 +120,7 @@ VALUES
         4,
         'Trần Thị B',
         30,
-        b '0',
+        0b0,
         '2023-02-15',
         '1992-09-20'
     ),
@@ -128,7 +128,7 @@ VALUES
         5,
         'Lê Văn C',
         22,
-        b '1',
+        0b1,
         '2023-03-10',
         '2000-11-08'
     );
