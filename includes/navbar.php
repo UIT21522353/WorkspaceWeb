@@ -1,79 +1,94 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container py-2 px-4">
-    <div class="row">
-    <div class="col-md-2">
-        <a class="navbar-brand fs-4" href="index.php" style="font-weight: bolder; ">Foodies</a>
-        <button class="navbar-toggler float-end " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg fixed-top fw-bold">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="index.php">GOGATWO</a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GOGATWO</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 fw-bold"
+                  style="color: #0c0d0d"
+                  aria-current="page"
+                  href="index.php"
+                >
+                  <i class="fas fa-home"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 fw-bold"
+                  style="color: #0c0d0d"
+                  href="aboutUs.php"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 fw-bold"
+                  style="color: #0c0d0d"
+                  href="category.php"
+                  ><i class="fa-solid fa-store" style="color: #0c0d0d"></i
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 fw-bold"
+                  href="contactUs.php"
+                  style="color: #0c0d0d"
+                  ><i class="fa-solid fa-phone fa-lg" style="color: #0c0d0d"></i
+                  >Contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="cart.php">
+                  <i
+                    class="fa-solid fa-cart-shopping fa-xl"
+                    style="color: #121212"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="wishlist.php">
+                  <i class="fa-solid fa-heart fa-xl" style="color: #121212"></i>
+                </a>
+              </li>
+              <li class="nav-item" style="align-items: center; display: flex">
+                <a class="nav-link mx-lg-2" href="">
+                  <button class="btn" style="color: #161717" title="Search">
+                    <i class="fas fa-magnifying-glass fa-lg"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="login.php" class="login-button" style="color: #141415">
+          <i class="fas fa-circle-user fa-lg"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-
-      <div class="col-md-2">
-        <form id="searchForm" action="product.php?" method="GET" class="d-flex justify-content-between">
-          <input class="form-control" type="text" id="search" name="key" placeholder="Search for" aria-label="Search" style="width: 85%">
-          <button class="btn" type="submit" title="Search" style="background-color: white;">
-            <i class="fa fa-search" style="color: #7D6323;"></i>
-          </button>
-        </form>
-      </div>
-
-      <div class="col-md-8">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'aboutUs.php') ? 'active' : ''; ?>" style="width:95px;" href="aboutUs.php">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contactUs.php') ? 'active' : ''; ?>" style="width:110px;" href="contactUs.php">Contact Us</a> <!-- Check ref -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'reservation.php') ? 'active' : ''; ?>" style="width:110px;" href="reservation.php">Reservation</a> <!-- Thêm ref -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'category.php') ? 'active' : ''; ?>" style="width:100px;" href="category.php">Our Menu </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'wishlist.php') ? 'active' : ''; ?>" href="wishlist.php">Wishlist</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'cart.php') ? 'active' : ''; ?>" href="cart.php">Cart</a>
-            </li>
-          </ul>
-
-          
-            <ul class="navbar-nav ms-auto">
-              <?php
-              if (isset($_SESSION['auth'])) {
-              ?>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <?= $_SESSION['auth_user']['name'];   ?>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="myOrder.php">My Orders</a></li>
-                    <li><a class="dropdown-item" href="myProfile.php">My Profile</a></li>
-                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                  </ul>
-                </li>
-              <?php
-              } else {
-              ?>
-                <li class="nav-item">
-                  <a class="nav-link" href="register.php">Register</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.php">Login</a>
-                </li>
-              <?php
-              }
-              ?>
-            </ul>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+    </nav>

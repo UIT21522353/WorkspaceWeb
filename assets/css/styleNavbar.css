@@ -1,0 +1,143 @@
+/* CSS for Header starts */
+body {
+    padding-top: 80px;
+  }
+  .navbar {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .nav-brand {
+    font-size: 24px;
+    font-weight: 500;
+    color: #009970;
+    transition: 0.3s color;
+  }
+  
+  /* .login-button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  } */
+  .navbar-nav .nav-item button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navbar-nav .nav-item button .fas {
+    margin: 0; /* Reset margin for the icon */
+  }
+  
+  .navbar-nav .nav-item button {
+    padding: 0; /* Remove padding */
+  }
+  
+  /* .login-button:hover {
+    background-color: #00b38a;
+  } */
+  
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  btn-close:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #666777;
+    position: relative;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #000;
+  }
+  
+  @media (min-width: 991px) {
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transform: 0.3s ease-in-out;
+    }
+  
+    .nav-link:hover::before,
+    .nav-link.active ::before {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+  .hero-section {
+    background: url(bg2.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .content {
+    flex: 1;
+    /* Add other styles for your content area */
+    background: url("bg2.png") no-repeat center;
+    background-size: cover;
+    padding: 20px; /* Adjust as needed */
+  }
+  .footer-container {
+      background-color: #fff;
+      border-radius: 50px;
+      overflow: hidden;
+      color: #0b0b0b;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    
+    .footer-container .btn {
+      color: #0b0b0b;
+      margin: 0 5px;
+      border-color: #0b0b0b;
+    }
+    
+    .footer-container p {
+      margin-bottom: 0;
+    }
+    
+    .copy {
+      font-size: 14px;
+      text-decoration: none;
+    }
+    
+    .footer-container .me-auto {
+      margin-right: auto;
+    }
+    
+    .footer-container .copy {
+      margin-left: auto;
+    }
+    
+    .footer-container .mb-4 {
+      margin-bottom: 0;
+    }
+    
