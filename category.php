@@ -22,7 +22,7 @@ include('./includes/header.php'); ?>
                                 <a href="product.php?category=<?= $item['slug']; ?>">
                                     <div class="card bg-brown shadow-lg mb-5 rounded border-0">
                                         <div class="card-body p-0">
-                                            <img src="uploads/<?= $item['image']; ?>" alt="Category Image" class="w-100">
+                                            <img src="uploads/categories/<?= $item['image']; ?>" alt="Category Image" class="w-100">
                                             <div>
                                                 <h4 class="fw-bolder d-flex justify-content-center" style="color: #8B4513;"><?= $item['name']; ?></h4>
 
